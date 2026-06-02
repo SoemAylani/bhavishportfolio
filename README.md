@@ -30,3 +30,5 @@ The site works without these. Contact form data will be stored in `data/contacts
 - `MONGODB_URI` for MongoDB storage
 - `EMAIL_USER` and `EMAIL_PASSWORD` for email notifications
 - `EMAIL_SERVICE` default is `gmail`
+
+deploy trigger
