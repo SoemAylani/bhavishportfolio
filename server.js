@@ -183,9 +183,14 @@ const contactValidation = [
 
 // API Routes
 
-// Root – open portfolio (same origin = contact form works without CORS/Live Server)
+// Root – open portfolio
 app.get('/', (req, res) => {
-    res.redirect(302, '/portfolio.html');
+    res.sendFile(path.join(__dirname, 'index.html'));
+});
+
+// Old filename support
+app.get('/portfolio.html', (req, res) => {
+    res.redirect(301, '/');
 });
 
 // Health check endpoint
@@ -276,7 +281,7 @@ app.get('/api/contacts', async (req, res) => {
     }
 });
 
-// Serve portfolio files (HTML, CSS, JS) from project folder – open http://localhost:3000
+// Serve portfolio files (HTML, CSS, JS, image)
 app.use(express.static(__dirname));
 
 // 404 handler (after static so only unknown paths hit this)
@@ -320,5 +325,11 @@ function startServer(port) {
     });
 }
 
-startServer(PORT);
+// On Vercel, export the Express app as a serverless function.
+// Locally, still run with npm start.
+if (process.env.VERCEL) {
+    module.exports = app;
+} else {
+    startServer(PORT);
+}
 

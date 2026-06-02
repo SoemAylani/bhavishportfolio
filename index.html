@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bhavish Kumar - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">Bhavish.</div>
+                <ul class="nav-menu">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#education" class="nav-link">Education</a></li>
+                    <li><a href="#experience" class="nav-link">Experience</a></li>
+                    <li><a href="#certificates" class="nav-link">Certificates</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <button class="theme-toggle" id="themeToggle">
+                    <i class="fas fa-moon" id="themeIcon"></i>
+                </button>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="home">
+        <div class="container">
+            <div class="home-content">
+                <div class="home-text fade-in">
+                    <h1>Hi, I'm <span class="highlight">Bhavish Kumar</span></h1>
+                    <h2>Bachelors in Computer Science | SZABIST Hyderabad</h2>
+                    <p class="tagline">Passionate about Machine Learning, AI, Data Science, and Web Development. Building intelligent solutions and modern web experiences with Python, JavaScript, and cloud technologies.</p>
+                    <div class="home-buttons">
+                        <button type="button" class="btn btn-primary" id="hireMeBtn">Hire Me</button>
+                        <button type="button" class="btn btn-secondary" id="letsTalkBtn">Let's Talk</button>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/bhavish-kumar-ab40a9303?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" class="social-icon" aria-label="LinkedIn" target="_blank" rel="noopener"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="mailto:bhavishkumar799@gmail.com" class="social-icon" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+                <div class="home-image fade-in">
+                    <div class="image-container">
+                        <img src="profile.jpeg" alt="Bhavish Kumar" class="profile-image" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="image-placeholder" style="display: none;">
+                            <i class="fas fa-user-circle"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <a href="#about"><i class="fas fa-chevron-down"></i></a>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-card slide-in-left">
+                    <div class="card-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Education</h3>
+                    <p><strong>Bachelors in Computer Science</strong></p>
+                    <p>Shaheed Zulfikar Ali Bhutto Institute of Science and Technology, Hyderabad</p>
+                    <p>2023 – 2027 · CGPA 3.02/4.0</p>
+                </div>
+                <div class="about-card slide-in-up">
+                    <div class="card-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>Areas of Interest</h3>
+                    <ul>
+                        <li><i class="fas fa-brain"></i> Machine Learning & AI</li>
+                        <li><i class="fas fa-chart-line"></i> Data Science</li>
+                        <li><i class="fas fa-cloud"></i> Cloud Computing</li>
+                        <li><i class="fas fa-code"></i> Web Development</li>
+                    </ul>
+                </div>
+                <div class="about-card slide-in-right">
+                    <div class="card-icon">
+                        <i class="fas fa-bullseye"></i>
+                    </div>
+                    <h3>Technical Stack</h3>
+                    <p><strong>Languages:</strong> C++, Python, JavaScript, SQL</p>
+                    <p><strong>Tools:</strong> Git, GitHub, VS Code</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card fade-in">
+                    <div class="skill-header">
+                        <i class="fab fa-html5"></i>
+                        <h3>HTML</h3>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 90%"></div>
+                    </div>
+                    <span class="skill-percentage">90%</span>
+                </div>
+                <div class="skill-card fade-in">
+                    <div class="skill-header">
+                        <i class="fab fa-css3-alt"></i>
+                        <h3>CSS</h3>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 85%"></div>
+                    </div>
+                    <span class="skill-percentage">85%</span>
+                </div>
+                <div class="skill-card fade-in">
+                    <div class="skill-header">
+                        <i class="fab fa-js"></i>
+                        <h3>JavaScript</h3>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 80%"></div>
+                    </div>
+                    <span class="skill-percentage">80%</span>
+                </div>
+                <div class="skill-card fade-in">
+                    <div class="skill-header">
+                        <i class="fab fa-python"></i>
+                        <h3>Python</h3>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 75%"></div>
+                    </div>
+                    <span class="skill-percentage">75%</span>
+                </div>
+                <div class="skill-card fade-in">
+                    <div class="skill-header">
+                        <i class="fas fa-brain"></i>
+                        <h3>Machine Learning</h3>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 60%"></div>
+                    </div>
+                    <span class="skill-percentage">60%</span>
+                </div>
+                <div class="skill-card fade-in">
+                    <div class="skill-header">
+                        <i class="fas fa-database"></i>
+                        <h3>SQL</h3>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 75%"></div>
+                    </div>
+                    <span class="skill-percentage">75%</span>
+                </div>
+                <div class="skill-card fade-in">
+                    <div class="skill-header">
+                        <i class="fas fa-code"></i>
+                        <h3>C++</h3>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 70%"></div>
+                    </div>
+                    <span class="skill-percentage">70%</span>
+                </div>
+                <div class="skill-card fade-in">
+                    <div class="skill-header">
+                        <i class="fab fa-git-alt"></i>
+                        <h3>Git & GitHub</h3>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 80%"></div>
+                    </div>
+                    <span class="skill-percentage">80%</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card fade-in">
+                    <div class="project-image">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Portfolio Website</h3>
+                        <p>A modern, responsive portfolio website showcasing my skills, projects, education, and experience. Built with a clean design featuring dark/light theme toggle, smooth animations, and a fully functional contact form with backend integration.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">Express</span>
+                        </div>
+                        <div class="project-features">
+                            <p><i class="fas fa-check-circle"></i> Responsive design</p>
+                            <p><i class="fas fa-check-circle"></i> Dark/light theme toggle</p>
+                            <p><i class="fas fa-check-circle"></i> Contact form with backend API</p>
+                            <p><i class="fas fa-check-circle"></i> Smooth scroll animations</p>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://www.linkedin.com/in/bhavish-kumar-ab40a9303?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" class="btn btn-secondary" target="_blank" rel="noopener"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card fade-in">
+                    <div class="project-image">
+                        <i class="fas fa-cloud-sun-rain"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Weather Website</h3>
+                        <p>A responsive web application that provides real-time weather information, 5-day forecasts, and rain predictions for any city using the OpenWeatherMap API. Features live location detection and beautiful weather icons.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">API</span>
+                        </div>
+                        <div class="project-features">
+                            <p><i class="fas fa-check-circle"></i> Real-time weather updates</p>
+                            <p><i class="fas fa-check-circle"></i> Live location detection</p>
+                            <p><i class="fas fa-check-circle"></i> 5-day forecast</p>
+                            <p><i class="fas fa-check-circle"></i> Rain predictions</p>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://www.linkedin.com/in/bhavish-kumar-ab40a9303?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" class="btn btn-secondary" target="_blank" rel="noopener"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education">
+        <div class="container">
+            <h2 class="section-title">Education</h2>
+            <div class="education-content">
+                <div class="education-card fade-in">
+                    <div class="education-icon">
+                        <i class="fas fa-university"></i>
+                    </div>
+                    <div class="education-details">
+                        <h3>Bachelors in Computer Science</h3>
+                        <p class="institution">Shaheed Zulfikar Ali Bhutto Institute of Science and Technology, Hyderabad</p>
+                        <p class="semester">CGPA: <strong>3.02/4.0</strong></p>
+                        <div class="education-timeline">
+                            <i class="fas fa-calendar-alt"></i>
+                            <span>2023 – 2027</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title">Experience</h2>
+            <div class="experience-content">
+                <div class="education-card fade-in">
+                    <div class="education-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <div class="education-details">
+                        <h3>Logistics Lead</h3>
+                        <p class="institution">SZABIST Hyderabad Amazon Web Services (AWS) Society</p>
+                        <p class="semester">January 2025 – Present</p>
+                        <ul class="experience-list">
+                            <li>Managing logistical operations for AWS society events, workshops, and activities including venue arrangements, resource management, and scheduling.</li>
+                            <li>Collaborating with team members to plan events, securing equipment, and maintaining professional environments for participants.</li>
+                            <li>Contributing to cloud technology awareness within the university community through organized activities and events.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="education-card fade-in">
+                    <div class="education-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="education-details">
+                        <h3>General Secretary</h3>
+                        <p class="institution">AAAI Society</p>
+                        <p class="semester">Present</p>
+                        <ul class="experience-list">
+                            <li>Supporting AAAI society operations, coordination, and event management within the university community.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificates Section -->
+    <section id="certificates" class="certificates">
+        <div class="container">
+            <h2 class="section-title">Certificates</h2>
+            <div class="certificates-grid">
+                <div class="certificate-card fade-in">
+                    <div class="certificate-icon"><i class="fas fa-award"></i></div>
+                    <h3>Machine Learning Specialization</h3>
+                    <p class="cert-date">November 2025</p>
+                    <p>Supervised & Unsupervised Learning, Neural Networks, Recommenders, Reinforcement Learning</p>
+                    <p class="cert-org">DeepLearning.AI, Stanford University</p>
+                </div>
+                <div class="certificate-card fade-in">
+                    <div class="certificate-icon"><i class="fas fa-award"></i></div>
+                    <h3>Advanced Learning Algorithms</h3>
+                    <p class="cert-date">September 2025</p>
+                    <p>Deep Neural Networks, Decision Trees, Ensemble Methods</p>
+                    <p class="cert-org">DeepLearning.AI</p>
+                </div>
+                <div class="certificate-card fade-in">
+                    <div class="certificate-icon"><i class="fas fa-award"></i></div>
+                    <h3>Supervised Machine Learning: Regression and Classification</h3>
+                    <p class="cert-date">August 2025</p>
+                    <p>Linear & Logistic Regression, Model Evaluation</p>
+                    <p class="cert-org">Coursera</p>
+                </div>
+                <div class="certificate-card fade-in">
+                    <div class="certificate-icon"><i class="fas fa-award"></i></div>
+                    <h3>Python for Data Science, AI & Development</h3>
+                    <p class="cert-date">November 2025</p>
+                    <p>Python Programming, Data Analysis, AI Development</p>
+                    <p class="cert-org">IBM</p>
+                </div>
+                <div class="certificate-card fade-in">
+                    <div class="certificate-icon"><i class="fas fa-award"></i></div>
+                    <h3>Web Development Bootcamp & Hackathon Participation</h3>
+                    <p class="cert-date">2024</p>
+                    <p>HTML, CSS, JavaScript training and programming competition</p>
+                    <p class="cert-org">MLSA – SZABIST Hyderabad</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Contact Me</h2>
+            <div class="contact-content">
+                <div class="contact-info fade-in">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <a href="mailto:bhavishkumar799@gmail.com">bhavishkumar799@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Phone</h3>
+                            <a href="tel:+923360371513">+92-336-0371513</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-linkedin-in"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>LinkedIn</h3>
+                            <a href="https://www.linkedin.com/in/bhavish-kumar-ab40a9303?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank" rel="noopener">linkedin.com/in/bhavish-kumar</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-wrapper fade-in">
+                    <form class="contact-form" id="contactForm">
+                        <input type="hidden" id="formType" name="formType" value="contact">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <div id="formMessage" class="form-message"></div>
+                        <button type="submit" class="btn btn-primary" id="submitBtn">
+                            <span id="submitText">Send Message</span>
+                            <span id="submitLoader" class="submit-loader" style="display: none;">
+                                <i class="fas fa-spinner fa-spin"></i> Sending...
+                            </span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Bhavish Kumar. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
