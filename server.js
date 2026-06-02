@@ -31,6 +31,9 @@ app.use(cors({
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
+// Serve static files FIRST
+app.use(express.static(path.join(__dirname)));
+
 // ----- File storage (used when MongoDB is not configured) -----
 function ensureDataDir() {
     const dir = path.dirname(CONTACTS_FILE);
@@ -281,8 +284,7 @@ app.get('/api/contacts', async (req, res) => {
     }
 });
 
-// Serve portfolio files (HTML, CSS, JS, image)
-app.use(express.static(__dirname));
+
 
 // 404 handler (after static so only unknown paths hit this)
 app.use((req, res) => {
